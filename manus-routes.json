@@ -1,0 +1,84 @@
+{
+  "routes": [
+    {
+      "path": "/",
+      "title": "МИП «ПрогнозРНМ» — Инженерные и цифровые решения для нефтегазовой отрасли и ТЭК"
+    },
+    {
+      "path": "/o-kompanii",
+      "title": "О компании"
+    },
+    {
+      "path": "/uslugi",
+      "title": "Услуги"
+    },
+    {
+      "path": "/oborudovanie",
+      "title": "Оборудование и химия"
+    },
+    {
+      "path": "/oborudovanie/mobilnaya-ustanovka-podgotovki-skvazhinnoj-produkcii",
+      "title": "Мобильная установка подготовки скважинной продукции (МУПСП)"
+    },
+    {
+      "path": "/oborudovanie/blochnaya-ustanovka-kustovoj-separacii-vody",
+      "title": "Блочная установка кустовой сепарации воды (БУКС)"
+    },
+    {
+      "path": "/oborudovanie/gidravlicheskij-privod-shtangovogo-glubinnogo-nasosa",
+      "title": "Гидравлический привод штангового глубинного насоса (ГПШГН)"
+    },
+    {
+      "path": "/oborudovanie/ustrojstvo-vvoda-himicheskih-reagentov-rdi",
+      "title": "Устройство ввода химических реагентов RDI (RDI)"
+    },
+    {
+      "path": "/oborudovanie/klapan-obratnyj-s-tochechnym-obogrevom",
+      "title": "Клапан обратный с точечным обогревом (Клапан)"
+    },
+    {
+      "path": "/oborudovanie/separatory-evk",
+      "title": "Сепараторы «ЕВК» (ЕВК)"
+    },
+    {
+      "path": "/oborudovanie/gidravlicheskij-paker-zpd-g",
+      "title": "Гидравлический пакер ЗПД-Г (ЗПД-Г)"
+    },
+    {
+      "path": "/oborudovanie/shnekovaya-gorizontalnaya-osaditelnaya-centrifuga",
+      "title": "Шнековая горизонтальная осадительная центрифуга (Центрифуга)"
+    },
+    {
+      "path": "/oborudovanie/himicheskie-reagenty-i-prisadki",
+      "title": "Химические реагенты и топливные присадки (Химия)"
+    },
+    {
+      "path": "/it-resheniya",
+      "title": "IT-решения и цифровизация"
+    },
+    {
+      "path": "/ekologiya",
+      "title": "Экология и водные ресурсы"
+    },
+    {
+      "path": "/proekty",
+      "title": "Проекты и внедрения"
+    },
+    {
+      "path": "/partnery",
+      "title": "Партнёры"
+    },
+    {
+      "path": "/kontakty",
+      "title": "Контакты"
+    },
+    {
+      "path": "/politika",
+      "title": "Политика обработки персональных данных"
+    },
+    {
+      "path": "/404",
+      "title": "Страница не найдена"
+    }
+  ]
+}

@@ -168,8 +168,8 @@
         message ? `\nЗадача:\n${message}` : ''
       ].filter(Boolean);
 
-      const subject = encodeURIComponent(`Заявка с сайта prognozrnm.ru — ${name}`);
-      const bodyText = encodeURIComponent(`${lines.join('\n')}\n\n—\nОтправлено с сайта prognozrnm.ru`);
+      const subject = encodeURIComponent(`Заявка с сайта ПрогнозРНМ — ${name}`);
+      const bodyText = encodeURIComponent(`${lines.join('\n')}\n\n—\nСформировано на сайте ПрогнозРНМ`);
       if (status) status.textContent = 'Открываем почтовый клиент…';
       window.location.href = `mailto:prognozrnm@mail.ru?subject=${subject}&body=${bodyText}`;
       setTimeout(() => {

@@ -92,7 +92,7 @@
     <div class="ihero__heading">
       <p class="ihero__eyebrow"><span></span>Пермь · научно-производственная компания</p>
       <h1 id="innovation-title">Инженерия<br><em>полного цикла</em></h1>
-      <p class="ihero__lead">Собственные разработки для нефтегаза и промышленности: оборудование, электрохимическая очистка воды и цифровые двойники промысла.</p>
+      <p class="ihero__lead">Четыре направления в одной команде: очистка воды, инжиниринг, оборудование и цифровые двойники промысла.</p>
       <div class="ihero__actions">
         <a class="btn btn--accent" href="/kontakty">Обсудить задачу <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14" stroke="currentColor" stroke-width="1.6"/></svg></a>
         <a class="ihero__explore" href="#napravleniya">Направления <span aria-hidden="true">↓</span></a>
@@ -101,27 +101,47 @@
         <span>С 2014 года</span><i aria-hidden="true"></i><span>Научная база ПНИПУ</span><i aria-hidden="true"></i><span>Сервис на объекте</span>
       </div>
     </div>
-    <div class="twin-view" data-current-mode="company">
-      <div class="twin-view__image">
-        <img data-mode-image src="/assets/hero-company.jpg" alt="Промышленный технологический цех с трубопроводами, насосами и запорной арматурой" width="1800" height="1200" fetchpriority="high" decoding="async">
-      </div>
-      <div class="twin-view__badge"><span class="twin-view__dot"></span><span data-mode-badge>Научно-производственная компания<br><b>Пермь · с 2014 года</b></span></div>
-      <div class="twin-view__axis" aria-hidden="true"><span>R&amp;D</span><span>01 / 04</span></div>
-      <div class="twin-view__panel" data-hero-panel>
-        <div class="twin-view__panel-top"><p>Три направления</p><span class="twin-view__dot"></span></div>
-        <h2 data-mode-title>Одна инженерная школа</h2>
-        <p data-mode-text>Очистка воды, нефтесервис и цифровые двойники: от лабораторных испытаний до сопровождения на объекте.</p>
-        <a href="/o-kompanii" data-mode-link>О компании <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14" stroke="currentColor" stroke-width="1.6"/></svg></a>
-      </div>
-      <p class="twin-view__caption" data-mode-caption>Инженерия · Наука · Оборудование</p>
+    <div class="collage">
+      <a class="collage__tile collage__tile--water" href="/ekologiya">
+        <img src="/assets/water-electro.jpg" alt="Электролизная ячейка очистки воды: электродные пластины и пузырьки газа" loading="eager" decoding="async" fetchpriority="high">
+        <span class="collage__label">
+          <span class="collage__index mono">01</span>
+          <span class="collage__flag">Приоритет</span>
+          <b>Очистка воды</b>
+          <small>запатентованный электролиз</small>
+        </span>
+        <span class="collage__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14" stroke="currentColor" stroke-width="1.6"/></svg></span>
+      </a><a class="collage__tile collage__tile--engineering" href="/uslugi">
+        <img src="/assets/lab.jpg" alt="Лаборатория: оборудование для исследований и испытаний" loading="lazy" decoding="async">
+        <span class="collage__label">
+          <span class="collage__index mono">02</span>
+
+          <b>Инжиниринг</b>
+          <small>НИР, лаборатория, нефтесервис</small>
+        </span>
+        <span class="collage__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14" stroke="currentColor" stroke-width="1.6"/></svg></span>
+      </a><a class="collage__tile collage__tile--digital" href="/it-resheniya">
+        <img src="/assets/model3d.jpg" alt="Трёхмерная цифровая модель кустовой площадки" loading="lazy" decoding="async">
+        <span class="collage__label">
+          <span class="collage__index mono">03</span>
+
+          <b>Цифровые двойники</b>
+          <small>моделирование и диспетчеризация</small>
+        </span>
+        <span class="collage__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14" stroke="currentColor" stroke-width="1.6"/></svg></span>
+      </a><a class="collage__tile collage__tile--equipment" href="/oborudovanie">
+        <img src="/assets/hero-equipment.jpg" alt="Блочно-модульная установка на раме: насосы, арматура и контрольно-измерительные приборы" loading="lazy" decoding="async">
+        <span class="collage__label">
+          <span class="collage__index mono">04</span>
+
+          <b>Оборудование</b>
+          <small>установки подготовки нефти и воды</small>
+        </span>
+        <span class="collage__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14" stroke="currentColor" stroke-width="1.6"/></svg></span>
+      </a>
     </div>
     <div class="ihero__bottom">
-      <div class="ihero__switch" aria-label="Выбор технологического направления">
-        <button type="button" data-mode="company" aria-pressed="true" class="is-active">01 <span>Компания</span></button>
-        <button type="button" data-mode="water" aria-pressed="false">02 <span>Очистка воды</span></button>
-        <button type="button" data-mode="engineering" aria-pressed="false">03 <span>Инжиниринг</span></button>
-        <button type="button" data-mode="digital" aria-pressed="false">04 <span>Цифровые двойники</span></button>
-      </div>
+      <p class="ihero__note mono">Четыре направления · один подрядчик</p>
       <a class="ihero__location" href="/kontakty"><span class="twin-view__dot"></span>Пермь, Россия <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14" stroke="currentColor" stroke-width="1.6"/></svg></a>
     </div>
   </div>
@@ -180,7 +200,7 @@
           <h3 class="dir__title">Инжиниринг и нефтесервис</h3>
           <p class="dir__text">НИР и НИОКР, лабораторные исследования, гидродинамика, аудит подрядчиков.</p>
         </div>
-        <div class="dir__media"><img src="/assets/lab.jpg" alt="" loading="lazy" decoding="async"></div>
+        <div class="dir__media"><img src="/assets/tomogram.jpg" alt="" loading="lazy" decoding="async"></div>
         <span class="dir__arrow" aria-hidden="true">
           <svg viewBox="0 0 24 12"><path d="M0 6h21M16 1l5 5-5 5" stroke="currentColor" stroke-width="1.4" fill="none"/></svg>
         </span>
@@ -192,7 +212,7 @@
           <h3 class="dir__title">Оборудование и химия</h3>
           <p class="dir__text">Установки подготовки нефти и воды, приводы ШГН, узлы ввода реагентов.</p>
         </div>
-        <div class="dir__media"><img src="/assets/equipment-mupsp.jpg" alt="" loading="lazy" decoding="async"></div>
+        <div class="dir__media"><img src="/assets/equipment-centrifuge.jpg" alt="" loading="lazy" decoding="async"></div>
         <span class="dir__arrow" aria-hidden="true">
           <svg viewBox="0 0 24 12"><path d="M0 6h21M16 1l5 5-5 5" stroke="currentColor" stroke-width="1.4" fill="none"/></svg>
         </span>

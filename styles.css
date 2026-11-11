@@ -215,7 +215,7 @@ h1, h2, h3, h4, p, dl, dd, figure, blockquote { margin: 0; }
   gap: 12px;
   flex: none;
 }
-.brand__mark { width: 30px; height: 34px; color: var(--ink); }
+.brand__mark { width: 29px; height: 40px; color: var(--ink); }
 .brand__text { display: flex; flex-direction: column; line-height: 1; }
 .brand__name {
   font-family: var(--f-display);
@@ -933,7 +933,7 @@ body.menu-open .mmenu { opacity: 1; visibility: visible; transform: none; }
   padding-bottom: 48px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
-.ftr__mark { width: 34px; height: 40px; color: rgba(243, 241, 236, 0.7); margin-bottom: 18px; }
+.ftr__mark { width: 33px; height: 46px; color: rgba(243, 241, 236, 0.92); margin-bottom: 18px; }
 .ftr__name {
   font-family: var(--f-display);
   font-size: 1.5rem;

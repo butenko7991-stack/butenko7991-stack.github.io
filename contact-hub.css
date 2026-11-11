@@ -236,13 +236,12 @@
 .ch-copy:hover { border-color: var(--ch-ice); background: #23383e; }
 
 .ch-tile--address {
-  grid-column: span 6;
+  grid-column: span 12;
   min-height: 285px;
   background: var(--ch-paper);
   color: var(--ch-graphite);
 }
 
-.ch-tile--production { background: #e8eee8; }
 .ch-tile--address .ch-tile-head { margin-bottom: 30px; }
 .ch-tile--address .ch-index { color: #53656a; }
 

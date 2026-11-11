@@ -14,7 +14,7 @@ body { font-size: 16px; }
 .hdr { background: rgba(12,21,29,.95); color: #f3f6f5; border-color: rgba(255,255,255,.1); }
 .hdr.is-scrolled { background: rgba(12,21,29,.97); border-color: rgba(255,255,255,.16); }
 .hdr__in { height: 76px; gap: 22px; }
-.brand__mark { color: #d9e6e7; width: 33px; height: 37px; }
+.brand__mark { color: #d9e6e7; width: 30px; height: 42px; }
 .brand__sub { color: #96a6ad; font-size: 7.5px; }
 .brand__name { font-size: 20px; }
 .nav { gap: 21px; }

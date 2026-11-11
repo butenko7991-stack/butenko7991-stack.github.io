@@ -18,8 +18,8 @@
   --accent: #ffd43a;
   --accent-soft: #ffe895;
   --cool: #2b8fa3;
-  --f-display: 'Golos Text', 'Helvetica Neue', system-ui, sans-serif;
-  --f-body: 'Inter', 'Helvetica Neue', system-ui, sans-serif;
+  --f-display: 'Onest', 'Golos Text', 'Helvetica Neue', system-ui, sans-serif;
+  --f-body: 'Inter Tight', 'Inter', 'Helvetica Neue', system-ui, sans-serif;
   --f-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', monospace;
   --ease: cubic-bezier(0.22, 0.7, 0.3, 1);
   --hdr-h: 76px;

@@ -201,9 +201,9 @@
       const subject = encodeURIComponent(`Заявка с сайта ПрогнозРНМ — ${name}`);
       const bodyText = encodeURIComponent(`${lines.join('\n')}\n\n—\nСформировано на сайте ПрогнозРНМ`);
       if (status) status.textContent = 'Открываем почтовый клиент…';
-      window.location.href = `mailto:prognozrnm@mail.ru?subject=${subject}&body=${bodyText}`;
+      window.location.href = `mailto:office@prognozrnm.ru?subject=${subject}&body=${bodyText}`;
       setTimeout(() => {
-        if (status) status.textContent = 'Если письмо не открылось — напишите нам на prognozrnm@mail.ru или позвоните.';
+        if (status) status.textContent = 'Если письмо не открылось — напишите нам на office@prognozrnm.ru или позвоните.';
       }, 1200);
     });
 

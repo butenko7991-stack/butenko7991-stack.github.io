@@ -2,6 +2,13 @@
   'use strict';
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const modes = {
+    company: {
+      title: 'Одна инженерная школа',
+      text: 'Очистка воды, нефтесервис и цифровые двойники: от лабораторных испытаний до сопровождения на объекте.',
+      link: '/o-kompanii', label: 'О компании',
+      image: '/assets/hero-company.jpg', alt: 'Промышленный технологический цех с трубопроводами и запорной арматурой',
+      badge: 'Научно-производственная компания', detail: 'Пермь · с 2014 года', caption: 'Инженерия · Наука · Оборудование'
+    },
     engineering: {
       title: 'Инжиниринг и исследования',
       text: 'Лабораторные исследования, расчёты и проектирование — основа надёжного технологического решения.',
@@ -17,11 +24,11 @@
       badge: 'Концептуальная иллюстрация', detail: 'Физика + цифровая модель', caption: 'Концепция инженерной системы · ПрогнозРНМ'
     },
     water: {
-      title: 'Очистка и подготовка воды',
-      text: 'Промышленные стоки, водоподготовка и фильтрат полигонов. Индивидуальная схема под состав воды и требования объекта.',
+      title: 'Очистка воды электролизом',
+      text: 'Запатентованная электрохимическая технология: промышленные стоки, водоподготовка и фильтрат полигонов. Схема под состав воды и требования объекта.',
       link: '/ekologiya', label: 'Изучить очистку воды',
-      image: '/assets/water-block.jpg', alt: 'Блочно-модульная установка очистки воды',
-      badge: 'Приоритетное направление', detail: 'Электрохимическая технология', caption: 'Блочно-модульная установка · Очистка воды'
+      image: '/assets/water-electro.jpg', alt: 'Электролизная ячейка очистки воды: электродные пластины и пузырьки газа',
+      badge: 'Приоритетное направление', detail: 'Запатентованный электролиз', caption: 'Электрохимическая ячейка · Очистка воды'
     }
   };
   const modeButtons = [.../** @type {NodeListOf<HTMLButtonElement>} */ (document.querySelectorAll('[data-mode]'))];
@@ -36,7 +43,7 @@
     if (!(button instanceof HTMLButtonElement)) return;
     button.addEventListener('click', () => {
       const key = button.dataset.mode;
-      const mode = key === 'water' ? modes.water : key === 'digital' ? modes.digital : key === 'engineering' ? modes.engineering : null;
+      const mode = key ? modes[key] : null;
       if (!mode || !modeTitle || !modeText || !(modeLink instanceof HTMLAnchorElement)) return;
       modeButtons.forEach((item) => {
         const active = item === button;

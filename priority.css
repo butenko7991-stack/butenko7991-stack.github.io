@@ -318,7 +318,7 @@
 .twin-view[data-current-mode="water"] .twin-view__image img { mask-image: none; object-fit: cover; opacity: .86; }
 .twin-view[data-current-mode="water"] .twin-view__axis { display: none; }
 .twin-view[data-current-mode="water"] .twin-view__image { border-radius: 18px; overflow: hidden; border: 1px solid #355052; }
-.ihero[data-water-first] .ihero__eyebrow { color: #ffd43a; }
+.ihero .ihero__eyebrow { color: #ffd43a; }
 
 /* Tighter rhythm on the home page. */
 .home-page .sec { padding-block: clamp(46px, 5.2vw, 78px); }

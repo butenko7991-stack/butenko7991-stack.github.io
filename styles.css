@@ -1973,3 +1973,37 @@ html.no-js .prow.is-hidden { display: grid; }
 .lic__list { margin: 18px 0 26px; padding: 0; list-style: none; display: grid; gap: 12px; }
 .lic__list li { padding-left: 16px; position: relative; line-height: 1.6; }
 .lic__list li::before { content: ''; position: absolute; left: 0; top: .62em; width: 5px; height: 5px; border-radius: 50%; background: #e8b21c; }
+
+/* metal structures page */
+.metal-link {
+  display: grid;
+  grid-template-columns: 1.02fr .98fr;
+  gap: 56px;
+  align-items: center;
+}
+.metal-link h2 { font-family: var(--f-display); font-size: clamp(26px, 3vw, 38px); font-weight: 600; line-height: 1.14; letter-spacing: -.03em; margin: 10px 0 18px; max-width: 15em; }
+.metal-link p { font-size: 15px; line-height: 1.75; color: var(--ink-2); max-width: 34em; }
+.metal-link__actions { display: flex; align-items: center; gap: 26px; margin-top: 26px; flex-wrap: wrap; }
+.metal-link__actions .btn svg { width: 15px; height: 15px; }
+.metal-link__media { border-radius: 18px; overflow: hidden; background: #0e1c22; aspect-ratio: 4 / 3; }
+.metal-link__media img { width: 100%; height: 100%; object-fit: cover; }
+@media (max-width: 900px) {
+  .metal-link { grid-template-columns: 1fr; gap: 28px; }
+  .metal-link__media { order: -1; }
+}
+
+/* light variant of the systems grid (metal structures page) */
+.systems--light { border-top-color: #dfe5e3; }
+.systems--light .system { border-bottom-color: #dfe5e3; }
+.systems--light .system:nth-child(odd) { border-right-color: #dfe5e3; }
+.systems--light .system__top span { color: #8d9b96; }
+.systems--light .system h3 { color: var(--ink); }
+.systems--light .system__short { color: #5b6a65; }
+.systems--light .system li { color: #46544f; }
+.systems--light .system li::before { background: rgba(20, 35, 31, .3); }
+.systems--light .system__effect { color: #7a6a28; }
+
+/* four-step stages on the metal page */
+.stages--4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+@media (max-width: 900px) { .stages--4 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .stages--4 { grid-template-columns: 1fr; } .stages--4 .stage { border-right: 0; } }

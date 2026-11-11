@@ -1969,3 +1969,7 @@ html.no-js .prow.is-hidden { display: grid; }
   .pdetail__facts { grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 24px; }
   .pdetail__facts dd { font-size: 14px; }
 }
+
+.lic__list { margin: 18px 0 26px; padding: 0; list-style: none; display: grid; gap: 12px; }
+.lic__list li { padding-left: 16px; position: relative; line-height: 1.6; }
+.lic__list li::before { content: ''; position: absolute; left: 0; top: .62em; width: 5px; height: 5px; border-radius: 50%; background: #e8b21c; }

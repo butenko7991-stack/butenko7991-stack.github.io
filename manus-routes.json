@@ -2,79 +2,79 @@
   "routes": [
     {
       "path": "/",
-      "title": "МИП «ПрогнозРНМ» — Инженерные и цифровые решения для нефтегазовой отрасли и ТЭК"
+      "title": "ПрогнозРНМ — очистка воды, оборудование, инженерия"
     },
     {
       "path": "/o-kompanii",
-      "title": "О компании"
+      "title": "О компании — ПрогнозРНМ"
     },
     {
       "path": "/uslugi",
-      "title": "Услуги"
+      "title": "Услуги — ПрогнозРНМ"
     },
     {
       "path": "/oborudovanie",
-      "title": "Оборудование и химия"
+      "title": "Оборудование и химия — ПрогнозРНМ"
     },
     {
       "path": "/oborudovanie/mobilnaya-ustanovka-podgotovki-skvazhinnoj-produkcii",
-      "title": "Мобильная установка подготовки скважинной продукции (МУПСП)"
+      "title": "Мобильная установка подготовки скважинной продукции (МУПСП) — ПрогнозРНМ"
     },
     {
       "path": "/oborudovanie/blochnaya-ustanovka-kustovoj-separacii-vody",
-      "title": "Блочная установка кустовой сепарации воды (БУКС)"
+      "title": "Блочная установка кустовой сепарации воды (БУКС) — ПрогнозРНМ"
     },
     {
       "path": "/oborudovanie/gidravlicheskij-privod-shtangovogo-glubinnogo-nasosa",
-      "title": "Гидравлический привод штангового глубинного насоса (ГПШГН)"
+      "title": "Гидравлический привод штангового глубинного насоса (ГПШГН) — ПрогнозРНМ"
     },
     {
       "path": "/oborudovanie/ustrojstvo-vvoda-himicheskih-reagentov-rdi",
-      "title": "Устройство ввода химических реагентов RDI (RDI)"
+      "title": "Устройство ввода химических реагентов RDI — ПрогнозРНМ"
     },
     {
       "path": "/oborudovanie/klapan-obratnyj-s-tochechnym-obogrevom",
-      "title": "Клапан обратный с точечным обогревом (Клапан)"
+      "title": "Клапан обратный с точечным обогревом — ПрогнозРНМ"
     },
     {
       "path": "/oborudovanie/separatory-evk",
-      "title": "Сепараторы «ЕВК» (ЕВК)"
+      "title": "Сепараторы «ЕВК» — ПрогнозРНМ"
     },
     {
       "path": "/oborudovanie/gidravlicheskij-paker-zpd-g",
-      "title": "Гидравлический пакер ЗПД-Г (ЗПД-Г)"
+      "title": "Гидравлический пакер ЗПД-Г — ПрогнозРНМ"
     },
     {
       "path": "/oborudovanie/shnekovaya-gorizontalnaya-osaditelnaya-centrifuga",
-      "title": "Шнековая горизонтальная осадительная центрифуга (Центрифуга)"
+      "title": "Шнековая горизонтальная осадительная центрифуга — ПрогнозРНМ"
     },
     {
       "path": "/oborudovanie/himicheskie-reagenty-i-prisadki",
-      "title": "Химические реагенты и топливные присадки (Химия)"
+      "title": "Химические реагенты и топливные присадки (Химия) — ПрогнозРНМ"
     },
     {
       "path": "/it-resheniya",
-      "title": "IT-решения и цифровизация"
+      "title": "IT-решения и цифровизация — ПрогнозРНМ"
     },
     {
       "path": "/ekologiya",
-      "title": "Очистка воды — приоритетное направление"
+      "title": "Очистка воды — приоритетное направление — ПрогнозРНМ"
     },
     {
       "path": "/proekty",
-      "title": "Проекты и внедрения"
+      "title": "Проекты и внедрения — ПрогнозРНМ"
     },
     {
       "path": "/partnery",
-      "title": "Партнёры"
+      "title": "Партнёры — ПрогнозРНМ"
     },
     {
       "path": "/kontakty",
-      "title": "Контакты"
+      "title": "Контакты — ПрогнозРНМ"
     },
     {
       "path": "/politika",
-      "title": "Политика обработки персональных данных"
+      "title": "Политика обработки персональных данных — ПрогнозРНМ"
     }
   ]
 }

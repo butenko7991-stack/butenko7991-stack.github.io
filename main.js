@@ -89,29 +89,53 @@
     });
   });
 
-  /* tabs */
+  /* tabs: mouse + keyboard, with ids for assistive tech */
   document.querySelectorAll('[data-tabs]').forEach((tabs) => {
     const buttons = [...tabs.querySelectorAll('[data-tab]')];
     const panels = [...tabs.querySelectorAll('[data-panel]')];
-    buttons.forEach((btn) => {
-      btn.addEventListener('click', () => {
-        const id = btn.dataset.tab;
-        buttons.forEach((b) => {
-          const on = b === btn;
-          b.classList.toggle('is-active', on);
-          b.setAttribute('aria-selected', String(on));
-        });
-        panels.forEach((p) => {
-          const on = p.dataset.panel === id;
-          p.classList.toggle('is-active', on);
-          if (on) {
-            p.classList.remove('reveal', 'is-in');
-          }
-        });
+    const activate = (btn, focus = false) => {
+      const id = btn.dataset.tab;
+      buttons.forEach((b) => {
+        const on = b === btn;
+        b.classList.toggle('is-active', on);
+        b.setAttribute('aria-selected', String(on));
+        b.tabIndex = on ? 0 : -1;
+      });
+      panels.forEach((p) => {
+        const on = p.dataset.panel === id;
+        p.classList.toggle('is-active', on);
+        p.hidden = !on;
+        if (on) p.classList.remove('reveal', 'is-in');
+      });
+      if (focus) btn.focus();
+    };
+    buttons.forEach((btn, i) => {
+      const id = btn.dataset.tab;
+      if (!btn.id) btn.id = `tab-${id}`;
+      btn.setAttribute('aria-controls', `panel-${id}`);
+      btn.tabIndex = btn.classList.contains('is-active') ? 0 : -1;
+      const panel = panels.find((p) => p.dataset.panel === id);
+      if (panel) {
+        panel.id = `panel-${id}`;
+        panel.setAttribute('aria-labelledby', btn.id);
+        panel.hidden = !panel.classList.contains('is-active');
+      }
+      btn.addEventListener('click', () => activate(btn));
+      btn.addEventListener('keydown', (e) => {
+        const step = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
+        if (step) {
+          e.preventDefault();
+          activate(buttons[(i + step + buttons.length) % buttons.length], true);
+        } else if (e.key === 'Home') {
+          e.preventDefault();
+          activate(buttons[0], true);
+        } else if (e.key === 'End') {
+          e.preventDefault();
+          activate(buttons[buttons.length - 1], true);
+        }
       });
     });
   });
-
   /* filters */
   document.querySelectorAll('[data-filter-bar]').forEach((bar) => {
     const buttons = [...bar.querySelectorAll('[data-filter]')];
@@ -146,12 +170,18 @@
       form.querySelectorAll('.is-error').forEach((el) => el.classList.remove('is-error'));
 
       if (!name) {
-        form.querySelector('[name="name"]').classList.add('is-error');
+        const field = form.querySelector('[name="name"]');
+        field.classList.add('is-error');
+        field.setAttribute('aria-invalid', 'true');
+        field.focus();
         if (status) status.textContent = 'Укажите, пожалуйста, имя.';
         return;
       }
       if (!phone && !email) {
-        form.querySelector('[name="phone"]').classList.add('is-error');
+        const field = form.querySelector('[name="phone"]');
+        field.classList.add('is-error');
+        field.setAttribute('aria-invalid', 'true');
+        field.focus();
         if (status) status.textContent = 'Оставьте телефон или e-mail для ответа.';
         return;
       }
@@ -179,6 +209,7 @@
 
     form.querySelectorAll('input, textarea').forEach((el) => {
       el.addEventListener('input', () => el.classList.remove('is-error'));
+      el.addEventListener('input', () => el.removeAttribute('aria-invalid'));
     });
   });
 

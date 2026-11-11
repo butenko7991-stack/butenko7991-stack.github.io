@@ -33,7 +33,8 @@
   bottom: 76px;
   display: none;
   width: 372px;
-  max-height: min(560px, calc(100vh - 120px));
+  height: min(70vh, 560px);
+  max-height: calc(100vh - 120px);
   grid-template-rows: auto minmax(0, 1fr) auto auto auto;
   border: 1px solid #213a44;
   border-radius: 18px;
@@ -202,9 +203,9 @@
     right: 0;
     bottom: 0;
     width: auto;
-    height: auto;
-    min-height: 420px;
-    max-height: min(82vh, 640px);
+    height: min(82vh, 620px);
+    min-height: 0;
+    max-height: none;
     border-radius: 18px 18px 0 0;
   }
   .ai__log { padding: 14px; }

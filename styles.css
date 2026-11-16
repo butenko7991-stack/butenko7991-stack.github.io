@@ -1978,3 +1978,14 @@ html.no-js .prow.is-hidden { display: grid; }
 .stages--4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 @media (max-width: 900px) { .stages--4 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 560px) { .stages--4 { grid-template-columns: 1fr; } .stages--4 .stage { border-right: 0; } }
+
+/* light variant of the systems grid */
+.systems--light { border-top-color: #dfe5e3; }
+.systems--light .system { border-bottom-color: #dfe5e3; }
+.systems--light .system:nth-child(odd) { border-right-color: #dfe5e3; }
+.systems--light .system__top span { color: #8d9b96; }
+.systems--light .system h3 { color: var(--ink); }
+.systems--light .system__short { color: #5b6a65; }
+.systems--light .system li { color: #46544f; }
+.systems--light .system li::before { background: rgba(20, 35, 31, .3); }
+.systems--light .system__effect { color: #7a6a28; }
